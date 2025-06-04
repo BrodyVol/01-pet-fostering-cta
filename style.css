@@ -1,0 +1,231 @@
+/* Set a calm, nature-inspired background for the whole page */
+body {
+  background-color: #e0f7fa; /* Light teal */
+  font-family: Arial, Helvetica, sans-serif; /* Easy-to-read font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Simple header for the site name */
+.site-header {
+  background-color: #01579b; /* Dark blue for contrast */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0 10px 0;
+}
+
+/* Make the site name bold and clear */
+.site-header h2 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Style the Call-to-Action banner with a background image and overlay */
+.cta-banner {
+  background-color: #0288d1; /* Fallback blue */
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  padding-top: 70px;    /* Restore original top padding */
+  padding-bottom: 70px; /* Restore original bottom padding */
+  padding-left: 20px;
+  padding-right: 20px;
+  /* Add the background image and a light overlay using a linear-gradient */
+  background-image: linear-gradient(rgba(2, 136, 209, 0.7), rgba(2, 136, 209, 0.7)), url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Make the heading large, bold, and stand out */
+.cta-banner h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #01579b;
+}
+
+/* Style the description text to be bold and clear */
+.cta-banner p {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #01579b;
+}
+
+/* Style the call-to-action link as a bold, eye-catching button */
+.cta-button {
+  background-color: #26c6da;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 35px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px #01579b33;
+  display: inline-block;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #0097a7;
+}
+
+/* Change button color when hovered */
+.cta-button:hover {
+  background-color: #0097a7;
+}
+
+/* Info section below the banner */
+.info-section {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto 0 auto; /* Center the section */
+  text-align: center;
+}
+
+/* Show image and text side by side using basic inline-block */
+.info-image {
+  width: 45%;
+  max-width: 300px;
+  vertical-align: top;
+  display: inline-block;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Info text column */
+.info-text {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5%;
+  text-align: left;
+}
+
+/* Make the info heading bold and clear */
+.info-text h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  color: #01579b;
+}
+
+/* Info paragraph styling */
+.info-text p {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #0277bd;
+  margin-top: 10px;
+}
+
+/* Style for the How to Adopt section */
+.adopt-section {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #b3e5fc; /* Light blue background */
+  border-radius: 8px;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.adopt-section h3 {
+  color: #01579b;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.adopt-section p {
+  color: #0277bd;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style for the contact section at the bottom */
+.contact-section {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto 30px auto;
+  background-color: #e1f5fe; /* Very light blue */
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.contact-section h3 {
+  color: #01579b;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.contact-section p {
+  color: #0277bd;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 8px 0 0 0;
+}
+
+/* Add smooth transition for headings and paragraphs in main sections */
+.cta-banner h1,
+.cta-banner p,
+.info-text h3,
+.info-text p,
+.adopt-section h3,
+.adopt-section p {
+  transition: font-size 0.3s, font-weight 0.3s;
+}
+
+/* Make CTA banner heading and paragraph bold and larger on hover */
+.cta-banner:hover h1,
+.cta-banner:hover p {
+  font-size: 2.8em; /* Slightly larger heading */
+  font-weight: bold;
+}
+
+.cta-banner:hover p {
+  font-size: 1.4em; /* Slightly larger paragraph */
+}
+
+/* Make "Why Foster?" section heading and text bold and larger on hover */
+.info-section:hover .info-text h3,
+.info-section:hover .info-text p {
+  font-size: 1.7em; /* Slightly larger heading */
+  font-weight: bold;
+}
+
+.info-section:hover .info-text p {
+  font-size: 1.3em; /* Slightly larger paragraph */
+}
+
+/* Make "How to Adopt" section heading and text bold and larger on hover */
+.adopt-section:hover h3,
+.adopt-section:hover p {
+  font-size: 1.7em; /* Slightly larger heading */
+  font-weight: bold;
+}
+
+.adopt-section:hover p {
+  font-size: 1.3em; /* Slightly larger paragraph */
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 600px) {
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+  .info-text {
+    margin-left: 0;
+    text-align: center;
+  }
+}
